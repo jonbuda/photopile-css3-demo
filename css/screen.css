@@ -4,15 +4,24 @@ body {
   width:      550px;
 }
 
-h1 {
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h1, h2 {
   color:        #555;
   font-weight:  normal;
   font-size:    20px;
   font-family:  "Helvetica Neue", Arial, sans-serif;
   line-height:  20px;
-  margin:       0 0 40px 0;
-  text-align:   center;
+  margin:       0 0 10px 0;
   text-shadow:  rgba(255,255,255, 0.9) 1px 1px 0;
+}
+
+h2 {
+  color: #999;
+  font-size: 14px;
 }
 
 ul {
@@ -63,10 +72,10 @@ ul li:nth-child(even) a {
 }
 
 ul li:nth-child(even) a:hover {
-  -webkit-transform: translate(-10px,-10px) rotate(-10deg) scale(1.05);
-  -moz-transform: translate(-10px,-10px) rotate(-10deg) scale(1.05);
-  -o-transform: translate(-10px,-10px) rotate(-10deg) scale(1.05);
-  transform: translate(-10px,-10px) rotate(-10deg) scale(1.05);
+  -webkit-transform: translate(-10px,-25px) rotate(-10deg) scale(1.05);
+  -moz-transform: translate(-10px,-25px) rotate(-10deg) scale(1.05);
+  -o-transform: translate(-10px,-25px) rotate(-10deg) scale(1.05);
+  transform: translate(-10px,-25px) rotate(-10deg) scale(1.05);
 }
 
 ul li a img {
@@ -108,17 +117,17 @@ ul li:nth-child(even):before {
 }
 
 ul li:hover:before {
-  -webkit-transform: translate(-5px,-5px) rotate(-5deg);
-  -moz-transform: translate(-5px,-5px) rotate(-5deg);
-  -o-transform: translate(-5px,-5px) rotate(-5deg);
-  transform: translate(-5px,-5px) rotate(-5deg);
+  -webkit-transform: translate(-15px,-5px) rotate(-5deg);
+  -moz-transform: translate(-15px,-5px) rotate(-5deg);
+  -o-transform: translate(-15px,-5px) rotate(-5deg);
+  transform: translate(-15px,-5px) rotate(-5deg);
   
 }
 ul li:nth-child(even):hover:before {
-  -webkit-transform: rotate(5deg);
-  -moz-transform: rotate(5deg);
-  -o-transform: rotate(5deg);
-  transform: rotate(5deg);
+  -webkit-transform: translate(10px,10px) rotate(5deg);
+  -moz-transform: translate(10px,10px) rotate(5deg);
+  -o-transform: translate(10px,10px) rotate(5deg);
+  transform: translate(10px,10px) rotate(5deg);
 }
 
 ul li:after {
@@ -130,10 +139,10 @@ ul li:after {
 }
 
 ul li:hover:after {
-  -webkit-transform: translate(5px,0) rotate(10deg);
-  -moz-transform: translate(5px,0) rotate(10deg);
-  -o-transform: translate(5px,0) rotate(10deg);
-  transform: translate(5px,0) rotate(10deg);
+  -webkit-transform: translate(10px,10px) rotate(10deg);
+  -moz-transform: translate(10px,10px) rotate(10deg);
+  -o-transform: translate(10px,10px) rotate(10deg);
+  transform: translate(10px,10px) rotate(10deg);
 }
 
 ul li:nth-child(even):after {
@@ -144,16 +153,16 @@ ul li:nth-child(even):after {
 }
 
 ul li:nth-child(even):hover:after {
-  -webkit-transform: translate(5px,0) rotate(-12deg);
-  -moz-transform: translate(5px,0) rotate(-12deg);
-  -o-transform: translate(5px,0) rotate(-12deg);
-  transform: translate(5px,0) rotate(-12deg);
+  -webkit-transform: translate(15px,0) rotate(-12deg);
+  -moz-transform: translate(15px,0) rotate(-12deg);
+  -o-transform: translate(15px,0) rotate(-12deg);
+  transform: translate(15px,0) rotate(-12deg);
 }
 
 
 ul li a, ul li:before, ul li:after {
-  -webkit-transition: all 0.3s ease-out;    
-  -moz-transition: all 0.3s ease-out;    
-  -o-transition: all 0.3s ease-out;    
-  transition: all 0.3s ease-out;    
+  -webkit-transition: all 0.15s ease-out;    
+  -moz-transition: all 0.15s ease-out;    
+  -o-transition: all 0.15s ease-out;    
+  transition: all 0.15s ease-out;    
 }
