@@ -9,6 +9,12 @@ header {
   margin-bottom: 40px;
 }
 
+#pile1 {
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 20px;
+}
+
 h1, h2 {
   color:        #555;
   font-weight:  normal;
@@ -29,7 +35,7 @@ ul {
   margin:     0;
 }
 
-ul li {
+#pile1 ul li {
   float:    left;
   height:   100px;
   margin:   0 30px 30px 0;
@@ -37,7 +43,8 @@ ul li {
   width:    135px;
 }
 
-ul li a {
+#pile1 ul li a {
+  outline:      0;
   background:   #fff;
   display:      block;
   position:     absolute;
@@ -53,7 +60,7 @@ ul li a {
   transform:    rotate(-4deg);
 }
 
-ul li a:hover {
+#pile1 ul li a:hover, #pile1 ul li a:focus {
   -webkit-box-shadow:   0px 0px 4px 0 rgba(0,0,0,.6);      
   -moz-box-shadow:   0px 0px 4px 0 rgba(0,0,0,.6);      
   -o-box-shadow:   0px 0px 4px 0 rgba(0,0,0,.6);      
@@ -64,21 +71,21 @@ ul li a:hover {
   transform: translate(15px,-25px) rotate(4deg) scale(1.05);
 }
 
-ul li:nth-child(even) a {
+#pile1 ul li:nth-child(even) a {
   -webkit-transform: rotate(6deg);
   -moz-transform: rotate(6deg);
   -o-transform: rotate(6deg);
   transform: rotate(6deg);
 }
 
-ul li:nth-child(even) a:hover {
+#pile1 ul li:nth-child(even) a:hover, #pile1 ul li:nth-child(even) a:focus {
   -webkit-transform: translate(-10px,-25px) rotate(-10deg) scale(1.05);
   -moz-transform: translate(-10px,-25px) rotate(-10deg) scale(1.05);
   -o-transform: translate(-10px,-25px) rotate(-10deg) scale(1.05);
   transform: translate(-10px,-25px) rotate(-10deg) scale(1.05);
 }
 
-ul li a img {
+#pile1 ul li a img {
   border:   0;
   display:  block;
   height:   73px;
@@ -86,7 +93,7 @@ ul li a img {
   margin:   0;      
 }
 
-ul li:before, ul li:after {
+#pile1 ul li:before, #pile1 ul li:after {
   background: #999;
   background-repeat: no-repeat;
   border:     10px solid #fff;
@@ -101,7 +108,7 @@ ul li:before, ul li:after {
   box-shadow:  0px 0px 3px 0 rgba(0,0,0,.3);
 }
 
-ul li:before {
+#pile1 ul li:before {
   z-index: -1;
   -webkit-transform: rotate(2deg);
   -moz-transform: rotate(2deg);
@@ -109,28 +116,29 @@ ul li:before {
   -transform: rotate(2deg);
 }
 
-ul li:nth-child(even):before {
+#pile1 ul li:nth-child(even):before {
   -webkit-transform: rotate(-4deg);
   -moz-transform: rotate(-4deg);
   -o-transform: rotate(-4deg);
   transform: rotate(-4deg);
 }
 
-ul li:hover:before {
+#pile1 ul li:hover:before {
   -webkit-transform: translate(-15px,-5px) rotate(-5deg);
   -moz-transform: translate(-15px,-5px) rotate(-5deg);
   -o-transform: translate(-15px,-5px) rotate(-5deg);
   transform: translate(-15px,-5px) rotate(-5deg);
   
 }
-ul li:nth-child(even):hover:before {
+
+#pile1 ul li:nth-child(even):hover:before {
   -webkit-transform: translate(10px,10px) rotate(5deg);
   -moz-transform: translate(10px,10px) rotate(5deg);
   -o-transform: translate(10px,10px) rotate(5deg);
   transform: translate(10px,10px) rotate(5deg);
 }
 
-ul li:after {
+#pile1 ul li:after {
   z-index: -2;
   -webkit-transform: rotate(6deg);
   -moz-transform: rotate(6deg);
@@ -138,21 +146,21 @@ ul li:after {
   transform: rotate(6deg);
 }
 
-ul li:hover:after {
+#pile1 ul li:hover:after {
   -webkit-transform: translate(10px,10px) rotate(10deg);
   -moz-transform: translate(10px,10px) rotate(10deg);
   -o-transform: translate(10px,10px) rotate(10deg);
   transform: translate(10px,10px) rotate(10deg);
 }
 
-ul li:nth-child(even):after {
+#pile1 ul li:nth-child(even):after {
   -webkit-transform: rotate(-10deg);
   -moz-transform: rotate(-10deg);
   -o-transform: rotate(-10deg);
   transform: rotate(-10deg);
 }
 
-ul li:nth-child(even):hover:after {
+#pile1 ul li:nth-child(even):hover:after {
   -webkit-transform: translate(15px,0) rotate(-12deg);
   -moz-transform: translate(15px,0) rotate(-12deg);
   -o-transform: translate(15px,0) rotate(-12deg);
@@ -160,9 +168,112 @@ ul li:nth-child(even):hover:after {
 }
 
 
-ul li a, ul li:before, ul li:after {
+#pile1 ul li a, #pile1 ul li:before, #pile1 ul li:after {
   -webkit-transition: all 0.15s ease-out;    
   -moz-transition: all 0.15s ease-out;    
   -o-transition: all 0.15s ease-out;    
   transition: all 0.15s ease-out;    
+}
+
+
+#pile2 {
+  padding: 40px 0;
+}
+
+#pile2 ul {
+  position: relative;
+  width: 130px;
+  margin: 90px auto 0 auto;
+}
+
+#pile2 ul li {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#pile2 ul li a {
+  background:   #fff;
+  display:      block;
+  padding:      10px;
+  width:        110px;
+  -webkit-box-shadow:   0px 0px 3px 0 rgba(0,0,0,.3);
+  -moz-box-shadow:   0px 0px 3px 0 rgba(0,0,0,.3);
+  -o-box-shadow:   0px 0px 3px 0 rgba(0,0,0,.3);
+  box-shadow:   0px 0px 3px 0 rgba(0,0,0,.3);
+}
+
+#pile2 ul li a img {
+  border:   0;
+  display:  block;
+  margin:   0;      
+}
+
+#pile2 ul li:nth-child(1) a {
+  z-index: 6;
+  -webkit-transform: translate(15px,0) rotate(-12deg);
+}
+
+#pile2 ul li:nth-child(2) a {
+  z-index: 5;
+  -webkit-transform: translate(15px,10px) rotate(-16deg);
+}
+
+#pile2 ul li:nth-child(3) a {
+  z-index: 4;
+  -webkit-transform: translate(8px,-8px) rotate(6deg);
+}
+
+#pile2 ul li:nth-child(4) a {
+  z-index: 3;
+  -webkit-transform: translate(25px,7px) rotate(10deg);
+}
+
+#pile2 ul li:nth-child(5) a {
+  z-index: 2;
+  -webkit-transform: translate(-9px,0px) rotate(-8deg);
+}
+
+#pile2 ul li:nth-child(6) a {
+  z-index: 1;
+  -webkit-transform: translate(5px,3px) rotate(6deg);
+}
+
+#pile2 ul li, #pile2 ul li a {
+  -webkit-transition: all 0.20s ease-out;    
+  -moz-transition: all 0.20s ease-out;    
+  -o-transition: all 0.20s ease-out;    
+  transition: all 0.20s ease-out;
+}
+
+#pile2 ul li a{
+  -webkit-transition-delay: .15s;
+}
+
+#pile2 ul:hover li:nth-child(1) a {
+  -webkit-transform: translate(-160px,-70px) rotate(-8deg);
+}
+
+#pile2 ul:hover li:nth-child(2) a {
+  -webkit-transform: translate(170px,60px) rotate(4deg);
+}
+
+#pile2 ul:hover li:nth-child(3) a {
+  -webkit-transform: translate(-30px,100px) rotate(-15deg);
+}
+
+#pile2 ul:hover li:nth-child(4) a {
+  -webkit-transform: translate(40px,-50px) rotate(-3deg);
+}
+
+#pile2 ul:hover li:nth-child(5) a {
+  -webkit-transform: translate(190px,-90px) rotate(12deg);
+}
+
+#pile2 ul:hover li:nth-child(6) a {
+  -webkit-transform: translate(-150px,40px) rotate(-35deg);
+}
+
+#pile2 ul li:hover {
+  -webkit-transform: scale(1.20) !important;
 }
