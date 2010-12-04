@@ -1,7 +1,9 @@
 body {
   background: #e3e3e3;
-  margin:     70px auto;
+  margin:     40px auto;
   width:      550px;
+  font-family:  "Helvetica Neue", Arial, sans-serif;
+  
 }
 
 header {
@@ -11,15 +13,15 @@ header {
 
 #pile1 {
   overflow: hidden;
+  border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
-  padding-bottom: 20px;
+  padding: 20px 0;
 }
 
 h1, h2 {
   color:        #555;
   font-weight:  normal;
   font-size:    20px;
-  font-family:  "Helvetica Neue", Arial, sans-serif;
   line-height:  20px;
   margin:       0 0 10px 0;
   text-shadow:  rgba(255,255,255, 0.9) 1px 1px 0;
@@ -30,15 +32,33 @@ h2 {
   font-size: 14px;
 }
 
+h3 {
+  display: block;
+  width: 100px;
+  background: #bbb;
+  color: #fff;
+  padding: 4px 8px;
+  font-size: 12px;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 1em;
+  text-shadow:  rgba(0,0,0, 0.2 ) 1px -1px 0;
+  
+}
+
 ul {
   list-style: none;
   margin:     0;
 }
 
+#pile1 ul {
+  margin-top: 20px;
+}
+
 #pile1 ul li {
   float:    left;
   height:   100px;
-  margin:   0 30px 30px 0;
+  margin:   30px 30px 30px 0;
   position: relative;
   width:    135px;
 }
@@ -60,7 +80,7 @@ ul {
   transform:    rotate(-4deg);
 }
 
-#pile1 ul li a:hover, #pile1 ul li a:focus {
+#pile1 ul li:hover a, #pile1 ul li a:focus {
   -webkit-box-shadow:   0px 0px 4px 0 rgba(0,0,0,.6);      
   -moz-box-shadow:   0px 0px 4px 0 rgba(0,0,0,.6);      
   -o-box-shadow:   0px 0px 4px 0 rgba(0,0,0,.6);      
@@ -78,7 +98,7 @@ ul {
   transform: rotate(6deg);
 }
 
-#pile1 ul li:nth-child(even) a:hover, #pile1 ul li:nth-child(even) a:focus {
+#pile1 ul li:nth-child(even):hover a, #pile1 ul li:nth-child(even) a:focus {
   -webkit-transform: translate(-10px,-25px) rotate(-10deg) scale(1.05);
   -moz-transform: translate(-10px,-25px) rotate(-10deg) scale(1.05);
   -o-transform: translate(-10px,-25px) rotate(-10deg) scale(1.05);
@@ -277,10 +297,13 @@ ul {
 
 #pile3 {
   height: 200px;
-  padding: 100px 0;
+  padding: 30px 0 100px 0;
+  border-bottom: 1px solid #ccc;
+  
 }
 
 #pile3 ul {
+  margin-top: 60px;
   position: relative;
 }
 
@@ -315,11 +338,11 @@ ul {
 }
 
 #pile3 ul li:nth-child(3) a {
-  -webkit-transform: translate(8px,-8px) rotate(6deg);
+  -webkit-transform: translate(8px,-8px) rotate(9deg);
 }
 
 #pile3 ul li:nth-child(4) a {
-  -webkit-transform: translate(25px,7px) rotate(10deg);
+  -webkit-transform: translate(25px,7px) rotate(-26deg);
 }
 
 #pile3 ul li:nth-child(5) a {
@@ -343,56 +366,52 @@ ul {
 }
 
 #pile3 ul:hover li:nth-child(3) {
-  left: 200px;
+  left: 175px;
 }
 
 #pile3 ul:hover li:nth-child(2) {
-  left: 100px;
+  left: 75px;
 }
 
 #pile3 ul:hover li:nth-child(1) {
   left: 0px;
 }
 
+
+#pile3 ul li {
+  -webkit-transition: all 0.25s ease-out;    
+  -moz-transition: all 0.25s ease-out;    
+  -o-transition: all 0.25s ease-out;    
+  transition: all 0.25s ease-out;
+}
+
 #pile3 ul li:nth-child(6) {
-  -webkit-transition: all 0.20s ease-out;    
-  -moz-transition: all 0.20s ease-out;    
-  -o-transition: all 0.20s ease-out;    
-  transition: all 0.20s ease-out;
+
+  -webkit-transition-delay: .15s;
 }
 
 #pile3 ul li:nth-child(5) {
-  -webkit-transition: all 0.30s ease-out;    
-  -moz-transition: all 0.30s ease-out;    
-  -o-transition: all 0.30s ease-out;    
-  transition: all 0.30s ease-out;
+
+  -webkit-transition-delay: .25s;
 }
 
 #pile3 ul li:nth-child(4) {
-  -webkit-transition: all 0.40s ease-out;    
-  -moz-transition: all 0.40s ease-out;    
-  -o-transition: all 0.40s ease-out;    
-  transition: all 0.40s ease-out;
+
+  -webkit-transition-delay: .35s;
 }
 
 #pile3 ul li:nth-child(3) {
-  -webkit-transition: all 0.50s ease-out;    
-  -moz-transition: all 0.50s ease-out;    
-  -o-transition: all 0.50s ease-out;    
-  transition: all 0.50s ease-out;
+
+  -webkit-transition-delay: .45s;
 }
 
 #pile3 ul li:nth-child(2) {
-  -webkit-transition: all 0.60s ease-out;    
-  -moz-transition: all 0.60s ease-out;    
-  -o-transition: all 0.60s ease-out;    
-  transition: all 0.60s ease-out;
+
+  -webkit-transition-delay: .55s;
 }
 
 #pile3 ul li:nth-child(1) {
-  -webkit-transition: all 0.70s ease-out;    
-  -moz-transition: all 0.70s ease-out;    
-  -o-transition: all 0.70s ease-out;    
-  transition: all 0.70s ease-out;
+
+  -webkit-transition-delay: .65s;
 }
 
