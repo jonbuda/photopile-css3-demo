@@ -1,6 +1,7 @@
 body {
   background:   #e3e3e3;
   font-family:  "Helvetica Neue", Arial, sans-serif;
+  font-size:    12px;
   margin:       40px auto;
   width:        550px;
 }
@@ -40,9 +41,11 @@ h3 {
   padding:        4px 8px;
   margin:         0 auto;
   text-align:     center;
-  text-shadow:    rgba(0,0,0, 0.2 ) 1px -1px 0;
+  text-shadow:    rgba(0,0,0, 0.2 ) 0 1px 0;
   width:          100px;  
 }
+
+a {color: #4085DF;}
 
 ul {
   list-style: none;
