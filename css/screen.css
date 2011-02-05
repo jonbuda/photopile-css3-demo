@@ -1,0 +1,487 @@
+body {
+  background:   #e3e3e3;
+  font-family:  "Helvetica Neue", Arial, sans-serif;
+  font-size:    12px;
+  margin:       40px auto;
+  width:        550px;
+}
+
+header {
+  margin-bottom:  40px;
+  text-align:     center;
+}
+
+#pile1 {
+  border-bottom:  1px solid #ccc;
+  border-top:     1px solid #ccc;
+  overflow:       hidden;
+  padding:        20px 0;
+}
+
+h1, h2 {
+  color:        #555;
+  font-weight:  normal;
+  font-size:    20px;
+  line-height:  20px;
+  margin:       0 0 10px 0;
+  text-shadow:  rgba(255,255,255, 0.9) 1px 1px 0;
+}
+
+h2 {
+  color:      #999;
+  font-size:  14px;
+}
+
+h3 {
+  background:     #bbb;
+  border-radius:  1em;
+  color:          #fff;
+  display:        block;
+  font-size:      12px;
+  padding:        4px 8px;
+  margin:         0 auto;
+  text-align:     center;
+  text-shadow:    rgba(0,0,0, 0.2) 0 -1px 1px;
+  width:          100px;  
+}
+
+a { color: #4085DF; }
+
+ul {
+  list-style: none;
+  margin:     0;
+}
+
+/* PILE 1 */
+
+#pile1 ul {
+  margin-top: 20px;
+}
+
+#pile1 ul li {
+  float:    left;
+  height:   100px;
+  margin:   30px 30px 30px 0;
+  position: relative;
+  width:    135px;
+}
+
+#pile1 ul li a {
+  outline:      0;
+  background:   #fff;
+  display:      block;
+  position:     absolute;
+  padding:      10px;
+  width:        110px;
+  -webkit-box-shadow:   0px 0px 3px 0 rgba(0,0,0,.3);
+  -moz-box-shadow:   0px 0px 3px 0 rgba(0,0,0,.3);
+  -o-box-shadow:   0px 0px 3px 0 rgba(0,0,0,.3);
+  box-shadow:   0px 0px 3px 0 rgba(0,0,0,.3);
+  -webkit-transform:    rotate(-4deg);
+  -moz-transform:    rotate(-4deg);
+  -o-transform:    rotate(-4deg);
+  transform:    rotate(-4deg);
+}
+
+#pile1 ul li:hover a, #pile1 ul li a:focus {
+  -webkit-box-shadow:   0px 0px 3px 0 rgba(0,0,0,.6);      
+  -moz-box-shadow:   0px 0px 3px 0 rgba(0,0,0,.6);      
+  -o-box-shadow:   0px 0px 3px 0 rgba(0,0,0,.6);      
+  box-shadow:   0px 0px 3px 0 rgba(0,0,0,.6);      
+  -webkit-transform: translate(15px,-25px) rotate(4deg) scale(1.05);
+  -moz-transform: translate(15px,-25px) rotate(4deg) scale(1.05);
+  -o-transform: translate(15px,-25px) rotate(4deg) scale(1.05);
+  transform: translate(15px,-25px) rotate(4deg) scale(1.05);
+}
+
+#pile1 ul li:nth-child(even) a {
+  -webkit-transform: rotate(6deg);
+  -moz-transform: rotate(6deg);
+  -o-transform: rotate(6deg);
+  transform: rotate(6deg);
+}
+
+#pile1 ul li:nth-child(even):hover a, #pile1 ul li:nth-child(even) a:focus {
+  -webkit-transform: translate(-10px,-25px) rotate(-10deg) scale(1.05);
+  -moz-transform: translate(-10px,-25px) rotate(-10deg) scale(1.05);
+  -o-transform: translate(-10px,-25px) rotate(-10deg) scale(1.05);
+  transform: translate(-10px,-25px) rotate(-10deg) scale(1.05);
+}
+
+#pile1 ul li a img {
+  border:   0;
+  display:  block;
+  height:   73px;
+  width:    110px;
+  margin:   0;      
+}
+
+#pile1 ul li:before, #pile1 ul li:after {
+  background: #999;
+  background-repeat: no-repeat;
+  border:     10px solid #fff;
+  content:    '';
+  display:    block;
+  position:   absolute;
+  height:     73px;
+  width:      110px;
+  -webkit-box-shadow:  0px 0px 3px 0 rgba(0,0,0,.3);
+  -moz-box-shadow:  0px 0px 3px 0 rgba(0,0,0,.3);
+  -o-box-shadow:  0px 0px 3px 0 rgba(0,0,0,.3);
+  box-shadow:  0px 0px 3px 0 rgba(0,0,0,.3);
+}
+
+#pile1 ul li:before {
+  z-index: -1;
+  -webkit-transform: rotate(2deg);
+  -moz-transform: rotate(2deg);
+  -o-transform: rotate(2deg);
+  -transform: rotate(2deg);
+}
+
+#pile1 ul li:nth-child(even):before {
+  -webkit-transform: rotate(-4deg);
+  -moz-transform: rotate(-4deg);
+  -o-transform: rotate(-4deg);
+  transform: rotate(-4deg);
+}
+
+#pile1 ul li:hover:before {
+  -webkit-transform: translate(-15px,-5px) rotate(-5deg);
+  -moz-transform: translate(-15px,-5px) rotate(-5deg);
+  -o-transform: translate(-15px,-5px) rotate(-5deg);
+  transform: translate(-15px,-5px) rotate(-5deg);
+  
+}
+
+#pile1 ul li:nth-child(even):hover:before {
+  -webkit-transform: translate(10px,10px) rotate(5deg);
+  -moz-transform: translate(10px,10px) rotate(5deg);
+  -o-transform: translate(10px,10px) rotate(5deg);
+  transform: translate(10px,10px) rotate(5deg);
+}
+
+#pile1 ul li:after {
+  z-index: -2;
+  -webkit-transform: rotate(6deg);
+  -moz-transform: rotate(6deg);
+  -o-transform: rotate(6deg);
+  transform: rotate(6deg);
+}
+
+#pile1 ul li:hover:after {
+  -webkit-transform: translate(10px,10px) rotate(10deg);
+  -moz-transform: translate(10px,10px) rotate(10deg);
+  -o-transform: translate(10px,10px) rotate(10deg);
+  transform: translate(10px,10px) rotate(10deg);
+}
+
+#pile1 ul li:nth-child(even):after {
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+
+#pile1 ul li:nth-child(even):hover:after {
+  -webkit-transform: translate(15px,0) rotate(-12deg);
+  -moz-transform: translate(15px,0) rotate(-12deg);
+  -o-transform: translate(15px,0) rotate(-12deg);
+  transform: translate(15px,0) rotate(-12deg);
+}
+
+
+#pile1 ul li a, #pile1 ul li:before, #pile1 ul li:after {
+  -webkit-transition: all 0.15s ease-out;    
+  -moz-transition: all 0.15s ease-out;    
+  -o-transition: all 0.15s ease-out;    
+  transition: all 0.15s ease-out;    
+}
+
+
+/* PILE 2 */
+
+#pile2 {
+  border-bottom:  1px solid #ccc;
+  height:         300px;
+  padding:        40px 0;
+}
+
+#pile2 ul {
+  position: relative;
+  width:    130px;
+  margin:   90px auto 0 auto;
+}
+
+#pile2 ul li {
+  left:     0;
+  position: absolute;
+  top:      0;
+}
+
+#pile2 ul li a {
+  background:   #fff;
+  display:      block;
+  padding:      10px;
+  width:        110px;
+  -webkit-box-shadow:   0px 0px 3px 0 rgba(0,0,0,.3);
+  -moz-box-shadow:   0px 0px 3px 0 rgba(0,0,0,.3);
+  -o-box-shadow:   0px 0px 3px 0 rgba(0,0,0,.3);
+  box-shadow:   0px 0px 3px 0 rgba(0,0,0,.3);
+}
+
+#pile2 ul li a img {
+  border:   0;
+  display:  block;
+  margin:   0;      
+}
+
+#pile2 ul li:nth-child(1) a {
+  -webkit-transform: translate(15px,0) rotate(-12deg);
+  -moz-transform: translate(15px,0) rotate(-12deg);
+  -o-transform: translate(15px,0) rotate(-12deg);
+  transform: translate(15px,0) rotate(-12deg);
+}
+
+#pile2 ul li:nth-child(2) a {
+  -webkit-transform: translate(15px,10px) rotate(-16deg);
+  -moz-transform: translate(15px,10px) rotate(-16deg);
+  -o-transform: translate(15px,10px) rotate(-16deg);
+  transform: translate(15px,10px) rotate(-16deg);
+}
+
+#pile2 ul li:nth-child(3) a {
+  -webkit-transform: translate(8px,-8px) rotate(6deg);
+  -moz-transform: translate(8px,-8px) rotate(6deg);
+  -o-transform: translate(8px,-8px) rotate(6deg);
+  transform: translate(8px,-8px) rotate(6deg);
+}
+
+#pile2 ul li:nth-child(4) a {
+  -webkit-transform: translate(25px,7px) rotate(10deg);
+  -moz-transform: translate(25px,7px) rotate(10deg);
+  -o-transform: translate(25px,7px) rotate(10deg);
+  transform: translate(25px,7px) rotate(10deg);
+}
+
+#pile2 ul li:nth-child(5) a {
+  -webkit-transform: translate(-9px,0px) rotate(-8deg);
+  -moz-transform: translate(-9px,0px) rotate(-8deg);
+  -o-transform: translate(-9px,0px) rotate(-8deg);
+  transform: translate(-9px,0px) rotate(-8deg);
+}
+
+#pile2 ul li:nth-child(6) a {
+  -webkit-transform: translate(5px,3px) rotate(6deg);
+  -moz-transform: translate(5px,3px) rotate(6deg);
+  -o-transform: translate(5px,3px) rotate(6deg);
+  transform: translate(5px,3px) rotate(6deg);
+}
+
+#pile2 ul li, #pile2 ul li a {
+  -webkit-transition: all 0.20s ease-out;    
+  -moz-transition: all 0.20s ease-out;    
+  -o-transition: all 0.20s ease-out;    
+  transition: all 0.20s ease-out;
+}
+
+#pile2 ul li a{
+  -webkit-transition-delay: .15s;
+  -moz-transition-delay: .15s;
+  -o-transition-delay: .15s;
+  transition-delay: .15s;
+}
+
+#pile2 ul:hover li:nth-child(1) a {
+  -webkit-transform: translate(-160px,-70px) rotate(-8deg);
+  -moz-transform: translate(-160px,-70px) rotate(-8deg);
+  -o-transform: translate(-160px,-70px) rotate(-8deg);
+  transform: translate(-160px,-70px) rotate(-8deg);
+}
+
+#pile2 ul:hover li:nth-child(2) a {
+  -webkit-transform: translate(170px,60px) rotate(4deg);
+  -moz-transform: translate(170px,60px) rotate(4deg);
+  -o-transform: translate(170px,60px) rotate(4deg);
+  transform: translate(170px,60px) rotate(4deg);
+}
+
+#pile2 ul:hover li:nth-child(3) a {
+  -webkit-transform: translate(-30px,100px) rotate(-15deg);
+  -moz-transform: translate(-30px,100px) rotate(-15deg);
+  -o-transform: translate(-30px,100px) rotate(-15deg);
+  transform: translate(-30px,100px) rotate(-15deg);
+}
+
+#pile2 ul:hover li:nth-child(4) a {
+  -webkit-transform: translate(40px,-50px) rotate(-3deg);
+  -moz-transform: translate(40px,-50px) rotate(-3deg);
+  -o-transform: translate(40px,-50px) rotate(-3deg);
+  transform: translate(40px,-50px) rotate(-3deg);
+}
+
+#pile2 ul:hover li:nth-child(5) a {
+  -webkit-transform: translate(190px,-90px) rotate(12deg);
+  -moz-transform: translate(190px,-90px) rotate(12deg);
+  -o-transform: translate(190px,-90px) rotate(12deg);
+  transform: translate(190px,-90px) rotate(12deg);
+}
+
+#pile2 ul:hover li:nth-child(6) a {
+  -webkit-transform: translate(-150px,40px) rotate(-35deg);
+  -moz-transform: translate(-150px,40px) rotate(-35deg);
+  -o-transform: translate(-150px,40px) rotate(-35deg);
+  transform: translate(-150px,40px) rotate(-35deg);
+}
+
+/* PILE 3 */
+
+#pile3 {
+  height: 200px;
+  padding: 30px 0 100px 0;
+  border-bottom: 1px solid #ccc;
+  
+}
+
+#pile3 ul {
+  margin-top: 60px;
+  position: relative;
+}
+
+#pile3 ul li {
+  position: absolute;
+  left: 0;
+}
+
+#pile3 ul li a {
+  background:   #fff;
+  display:      block;
+  padding:      10px;
+  width:        110px;
+  -webkit-box-shadow:   0px 0px 3px 0 rgba(0,0,0,.3);
+  -moz-box-shadow:   0px 0px 3px 0 rgba(0,0,0,.3);
+  -o-box-shadow:   0px 0px 3px 0 rgba(0,0,0,.3);
+  box-shadow:   0px 0px 3px 0 rgba(0,0,0,.3);
+}
+
+#pile3 ul li a img {
+  border:   0;
+  display:  block;
+  margin:   0;      
+}
+
+#pile3 ul li:nth-child(1) a {
+  -webkit-transform: translate(15px,0) rotate(-12deg);
+  -moz-transform: translate(15px,0) rotate(-12deg);
+  -webkit-transform: translate(15px,0) rotate(-12deg);
+  transform: translate(15px,0) rotate(-12deg);
+}
+
+#pile3 ul li:nth-child(2) a {
+  -webkit-transform: translate(15px,10px) rotate(-16deg);
+  -moz-transform: translate(15px,10px) rotate(-16deg);
+  -o-transform: translate(15px,10px) rotate(-16deg);
+  transform: translate(15px,10px) rotate(-16deg);
+}
+
+#pile3 ul li:nth-child(3) a {
+  -webkit-transform: translate(8px,-8px) rotate(9deg);
+  -moz-transform: translate(8px,-8px) rotate(9deg);
+  -o-transform: translate(8px,-8px) rotate(9deg);
+  transform: translate(8px,-8px) rotate(9deg);
+}
+
+#pile3 ul li:nth-child(4) a {
+  -webkit-transform: translate(25px,7px) rotate(-26deg);
+  -moz-transform: translate(25px,7px) rotate(-26deg);
+  -o-transform: translate(25px,7px) rotate(-26deg);
+  transform: translate(25px,7px) rotate(-26deg);
+}
+
+#pile3 ul li:nth-child(5) a {
+  -webkit-transform: translate(-9px,0px) rotate(-8deg);
+  -moz-transform: translate(-9px,0px) rotate(-8deg);
+  -o-transform: translate(-9px,0px) rotate(-8deg);
+  transform: translate(-9px,0px) rotate(-8deg);
+}
+
+#pile3 ul li:nth-child(6) a {
+  -webkit-transform: translate(5px,3px) rotate(6deg);
+  -moz-transform: translate(5px,3px) rotate(6deg);
+  -o-transform: translate(5px,3px) rotate(6deg);
+  transform: translate(5px,3px) rotate(6deg);
+}
+
+#pile3 ul:hover li:nth-child(6) {
+  left: 450px;
+}
+
+#pile3 ul:hover li:nth-child(5) {
+  left: 350px;
+}
+
+#pile3 ul:hover li:nth-child(4) {
+  left: 250px;
+}
+
+#pile3 ul:hover li:nth-child(3) {
+  left: 175px;
+}
+
+#pile3 ul:hover li:nth-child(2) {
+  left: 75px;
+}
+
+#pile3 ul:hover li:nth-child(1) {
+  left: 0px;
+}
+
+#pile3 ul li {
+  -webkit-transition: all 0.25s ease-out;    
+  -moz-transition: all 0.25s ease-out;    
+  -o-transition: all 0.25s ease-out;    
+  transition: all 0.25s ease-out;
+}
+
+#pile3 ul li:nth-child(6) {
+  -webkit-transition-delay: .15s;
+  -moz-transition-delay: .15s;
+  -webkit-transition-delay: .15s;
+  transition-delay: .15s;
+}
+
+#pile3 ul li:nth-child(5) {
+  -webkit-transition-delay: .25s;
+  -moz-transition-delay: .25s;
+  -o-transition-delay: .25s;
+  transition-delay: .25s;
+}
+
+#pile3 ul li:nth-child(4) {
+  -webkit-transition-delay: .35s;
+  -moz-transition-delay: .35s;
+  -o-transition-delay: .35s;
+  transition-delay: .35s;
+}
+
+#pile3 ul li:nth-child(3) {
+  -webkit-transition-delay: .45s;
+  -moz-transition-delay: .45s;
+  -o-transition-delay: .45s;
+  transition-delay: .45s;
+}
+
+#pile3 ul li:nth-child(2) {
+  -webkit-transition-delay: .55s;
+  -moz-transition-delay: .55s;
+  -o-transition-delay: .55s;
+  transition-delay: .55s;
+}
+
+#pile3 ul li:nth-child(1) {
+  -webkit-transition-delay: .65s;
+  -moz-transition-delay: .65s;
+  -o-transition-delay: .65s;
+  transition-delay: .65s;
+}
+
