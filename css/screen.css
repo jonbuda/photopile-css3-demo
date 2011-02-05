@@ -41,11 +41,11 @@ h3 {
   padding:        4px 8px;
   margin:         0 auto;
   text-align:     center;
-  text-shadow:    rgba(0,0,0, 0.2 ) 0 1px 0;
+  text-shadow:    rgba(0,0,0, 0.2) 0 -1px 1px;
   width:          100px;  
 }
 
-a {color: #4085DF;}
+a { color: #4085DF; }
 
 ul {
   list-style: none;
